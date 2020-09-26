@@ -1,13 +1,63 @@
 body {
+  font-family: "Segoe UI", "Roboto";
+  overflow: hidden;
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.main-header {
+  padding-top: 14px;
+  height: 56px;
+}
+.serchicon {
+  background: #f2f3f6;
+  border-radius: 50%;
+  margin: 0px 0px 0 45px;
+}
+.logo-heading {
+  text-align: center;
+  margin-top: -10px;
+}
+.main-logo-heading {
+  font-size: 30px;
+}
+.sub-logo-heading {
+  font-size: 11px;
+  letter-spacing: 5px;
+}
+.button-block {
+  margin-left: 118px;
+}
+.sell-button {
+  background-color: #003e51;
+  width: 135px;
+  height: 28px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.icon {
+  margin-left: 15px;
+  color: #d9c1a2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.menu {
+  background-color: #f5f6f8;
+}
+.menu-navbar {
+  height: 31px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.menu-items {
+  margin-right: 35px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.menu-items-right {
+  font-size: 14px;
+  font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
 }
