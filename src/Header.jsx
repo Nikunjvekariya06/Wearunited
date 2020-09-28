@@ -22,18 +22,18 @@ function Header() {
   return (
     <>
       <Grid container className="main-header">
-        <Grid item xs={4}>
+        <Grid item xs={12} lg={4} md={4}>
           <div>
             <SearchIcon className="serchicon" style={{ fontSize: "30px" }} />
           </div>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} lg={4} md={4}>
           <div className="logo-heading">
             <span className="main-logo-heading">WEAR</span>{" "}
             <span className="sub-logo-heading">UNITED</span>
           </div>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} lg={4} md={4}>
           <div className="button-block">
             <button className="sell-button">SELL AN ARTICLE</button>
             <span className="icon">
@@ -51,25 +51,36 @@ function Header() {
           </div>
         </Grid>
       </Grid>
+
       <div className="menu">
         <Navbar className="menu-navbar" light expand="md">
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem className="menu-items">
-                <NavLink href="/">Women</NavLink>
+                <NavLink href="/" className="nav-color">
+                  Women
+                </NavLink>
               </NavItem>
               <NavItem className="menu-items">
-                <NavLink href="/">Men</NavLink>
+                <NavLink href="/" className="nav-color">
+                  Men
+                </NavLink>
               </NavItem>
               <NavItem className="menu-items">
-                <NavLink href="/">Designer</NavLink>
+                <NavLink href="/" className="nav-color">
+                  Designer
+                </NavLink>
               </NavItem>
               <NavItem className="menu-items">
-                <NavLink href="/">Jewelry & Watches</NavLink>
+                <NavLink href="/" className="nav-color">
+                  Jewelry & Watches
+                </NavLink>
               </NavItem>
               <NavItem className="menu-items">
-                <NavLink href="/">Kids</NavLink>
+                <NavLink href="/" className="nav-color">
+                  Kids
+                </NavLink>
               </NavItem>
               <NavItem className="menu-items">
                 <NavLink href="/">Sport</NavLink>
