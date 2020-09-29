@@ -1,5 +1,5 @@
 import React from "react";
-import bag from "./bag.png";
+import bag from "../../assests/images/bag.png";
 
 function Item() {
   const item = [
@@ -14,16 +14,15 @@ function Item() {
     { image: bag, name: "GIVENCHY" },
     { image: bag, name: "DOLCE & GABBANA" },
   ];
+  console.log(item);
   return (
     <>
       <div className="main-Item-bar">
         <ul>
-          {item.map((obj) => (
-            <li className="item-bar">
+          {item.map((obj, index) => (
+            <li key={index} className="item-bar">
               <img className="item-image" src={obj.image} alt="item" />
-              <center>
-                <p className="item-name">{obj.name}</p>
-              </center>{" "}
+              <p className="item-name">{obj.name}</p>
             </li>
           ))}
         </ul>

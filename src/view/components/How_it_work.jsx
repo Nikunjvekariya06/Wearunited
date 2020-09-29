@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import bag from "./bag.png";
+import bag from "../../assests/images/bag.png";
 function Howitwork() {
   return (
     <>
@@ -14,7 +14,7 @@ function Howitwork() {
               <ul>
                 <li className="heading-name sell">SELL</li>
                 <li className="heading-name buy">BUY</li>
-                <li className="heading-name ">RENT</li>
+                <li className="heading-name rent">RENT</li>
               </ul>
             </div>
             <Grid container spacing={3} className="content-block">
@@ -22,7 +22,8 @@ function Howitwork() {
                 <center>
                   <img src={bag} height="54px" width="36px" alt="discount" />
                   <p className="sub-content">
-                    Upload picture of your article, fill the form, and that'sit!
+                    Upload pictures of your article, fill the form,and that's
+                    it!
                   </p>
                 </center>
               </Grid>
@@ -36,7 +37,7 @@ function Howitwork() {
                     alt="discount"
                   />
                   <p className="sub-content">
-                    You have sold an item! pack it very lovingly, we will send
+                    You have sold an item! Pack it very lovingly, we will send
                     you the tag,and X will do the rest.
                   </p>
                 </center>
